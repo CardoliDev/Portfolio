@@ -41,7 +41,7 @@ body {
     transition: var(--transition01--);
 }
 
-button:hover {
+button:hover, form .btn-enviar input[type=submit]:hover  {
     box-shadow: 0px 0px 8px var(--cor-efeito);
     transform: scale(1.05);
 
@@ -261,3 +261,56 @@ section.portfolio .flex {
     opacity: 1;
 }
 
+/*ESTILO DO FORMULÁRIO DE CONTATO*/
+section.formulario {
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input::placeholder {
+    color: var(--cor-efeito);
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form textarea::placeholder {
+    color: var(--cor-efeito);
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;    
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color: var(--cor-principal);
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition01--);
+}
