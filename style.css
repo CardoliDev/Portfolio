@@ -11,8 +11,8 @@
     --cor-principal: #88bbc4;
     --cor-efeito: #00eeff;
     --transition01--: .2s;
-    --transition02--: .3s;
-    --transition03--: .4s;
+    --transition02--: .5s;
+    --transition03--:  8s;
 }
 
 body {
@@ -212,3 +212,52 @@ section.sobre .flex {
     margin: 0 5px;
     transition: var(--transition01--);
 }
+
+/* ESTILO DO PORTFÓLIO */   
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;   
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+    transition: var(--transition03--);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: var(--transition02--);
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
