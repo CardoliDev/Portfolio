@@ -158,6 +158,10 @@ header img {
     z-index: 88888;
     display: none;
 }
+
+.btn-abrir-menu{
+    display: none;
+}
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
     padding: 40px 4%;
@@ -429,6 +433,10 @@ footer .line-footer p a {
     .menu-desktop,
     .btn-contato {
         display: none;
+    }
+
+    .btn-abrir-menu{
+        display: block;
     }
 
     /* TOPO DO SITE */
