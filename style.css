@@ -279,6 +279,10 @@ section.sobre .flex {
     transition: var(--transition01--);
 }
 
+.img-sobre img{
+    border-radius: 40px;
+}
+
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
     padding: 80px 4%;
