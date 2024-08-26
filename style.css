@@ -64,6 +64,7 @@ h2.titulo span {
     transform: scale(1.05);
     transition: var(--transition01--);
     color: var(--cor-efeito);
+    max-width: 20%;
 }
 
 
