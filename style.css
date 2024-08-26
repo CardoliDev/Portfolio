@@ -59,6 +59,14 @@ h2.titulo span {
 
 
 /*ESTILO DO CABEÇALHO*/
+
+.logo:hover {
+    transform: scale(1.05);
+    transition: var(--transition01--);
+    color: var(--cor-efeito);
+}
+
+
 header {
     padding: 40px 4%;
 }
